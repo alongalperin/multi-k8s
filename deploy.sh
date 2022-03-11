@@ -11,6 +11,6 @@ docker push alongal/multi-server:$SHA
 docker push alongal/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/client-deployment server=alongal/multi-client:$SHA
+kubectl set image deployments/client-deployment client=alongal/multi-client:$SHA
 kubectl set image deployments/server-deployment server=alongal/multi-server:$SHA
-kubectl set image deployments/worker-deployment server=alongal/multi-worker:$SHA
+kubectl set image deployments/worker-deployment worker=alongal/multi-worker:$SHA
