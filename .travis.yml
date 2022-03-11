@@ -23,5 +23,6 @@ script:
 deploy:
   provider: script
   script: bash ./deploy.sh
+  skip_cleaup: true
   on:
     branch: main
