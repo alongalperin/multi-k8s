@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="App">
         <div>
-          <h1>Fib Calculator version 2</h1>
+          <h1>Fib Calculator version kubernetes</h1>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
         </div>
