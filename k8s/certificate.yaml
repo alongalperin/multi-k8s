@@ -3,6 +3,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: alon-k8s-com-tls
+  namespace: default
 spec:
   secretName: alon-k8s-com
   issuerRef:
