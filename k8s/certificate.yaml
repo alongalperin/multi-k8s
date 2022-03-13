@@ -13,3 +13,10 @@ spec:
   dnsNames:
     - alon-k8s.com
     - www.alon-k8s.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - alon-k8s.com
+          - www.alon-k8s.com
